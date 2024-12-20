@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link:hover {
+  background-color: #45a049;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Sidebar bên trái */
+.sidebar {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+/* Các liên kết trong Sidebar */
+.sidebar a {
   color: white;
+  text-decoration: none;
+  margin: 15px 0;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar a:hover {
+  text-decoration: underline;
 }
